@@ -1,0 +1,118 @@
+body {
+	font: 16px "Titillium Web", sans-serif;
+	margin: 0;
+	background-color: #eee;
+}
+.navbar {
+	background-color: #009999;
+}
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+}
+.navbar ul li {
+	flex-grow: 1;
+}
+.navbar ul li a {
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.5em;
+	-webkit-transition: background-color 0.5s, color 0.5s;
+	transition: background-color 0.5s, color 0.5s;
+}
+.navbar a.active {
+	background-color: #006b6b;
+	color: #fff;
+}
+.navbar a:hover {
+	background-color: #AAFEFE;
+	color: #009999;
+}
+.fa-home {
+	font-size: 25px;
+}
+header {
+	text-align: center;
+}
+h1 {
+	color: #777380;
+	font-weight: 300;
+	font-size: 40px;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.flex-item {
+	background-color: #fff;
+	display: flex;
+	flex: 1 1 0;
+	align-items: center;
+	flex-direction: column;
+	max-width: 400px;
+	padding: 1em;
+	margin: 0.5em;
+	border-radius: 4px;
+	border-top: 5px solid #009999;
+}
+.flex-item img {
+	width: 400px;
+	border-radius: 4px;
+}
+.buy {
+	margin-top: auto;
+	width: 100%;
+}
+.buy ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+.buy ul li {
+	background-color: #eee;
+	font-weight: 700;
+	border-radius: 1em;
+	padding: 0.3em 0.6em;
+}
+.buy button {
+	background: #009999 url(images/check.png) no-repeat 2em 50%;
+	background-size: 2em;
+	border: none;
+	padding: 1.5em 3em 1.5em 6em;
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 4px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.5s, background-size 0.5s, background-position 0.5s;
+    transition: background-color 0.5s, background-size 0.5s, background-position 0.5s;
+}
+.buy button:hover {
+	background-color: #006B6B;
+	background-size: 3em;
+	background-position: 1.5em 50%;
+}
+.fa-tag {
+	color: #009999;
+}
+
+@media screen and (max-width: 1000px) {
+	.flex-item {
+		max-width: 250px;
+	}
+	.flex-item img {
+		width: 250px;
+	}
+}
